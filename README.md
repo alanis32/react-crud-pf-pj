@@ -1,6 +1,6 @@
 Segue o link do meu repositório com a solução da atividade:
 
-👉 https://github.com/fabiulabrandao-154/Atividade_Avaliativa_2_Unidade_5
+👉  https://github.com/alanis32/react-crud-pf-pj
 
 Para atender ao requisito da atividade, fiz as seguintes adaptações:
 
