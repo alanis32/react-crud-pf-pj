@@ -1,59 +1,64 @@
-🧩 React CRUD — Pessoa Física e Pessoa Jurídica
+✨ Principais Melhorias Implementadas
+🧑‍⚖️ Pessoa Física (PF): Data de Nascimento
 
-Este repositório contém a solução da atividade de implementação de um CRUD para Pessoas (PF e PJ) utilizando ReactJS + Vite, com armazenamento em LocalStorage.
+✔ Adicionado DatePicker no formulário (PFForm.jsx)
+✔ Criada propriedade dataNascimento na classe PF (PF.mjs)
+✔ Salvamento da data no formato YYYY-MM-DD (PessoaFormOOV2.jsx)
+✔ Conversão para dayjs ao editar
+✔ Exibição formatada na Listagem e Visualização
+— com alterações em:
+ListaPessoasV2.jsx e VisualizaPessoaV2.jsx
 
-O projeto foi desenvolvido a partir da base disponibilizada pelo professor e adaptado para incluir novos requisitos relacionados ao tratamento de data de nascimento da Pessoa Física.
+🗂️ Estrutura dos Arquivos Alterados
+src/
+ ├─ classes/
+ │   └─ PF.mjs
+ ├─ componentes/
+ │   ├─ pf/PFForm.jsx
+ │   ├─ pessoas/PessoaFormOOV2.jsx
+ │   ├─ listapessoas/ListaPessoasV2.jsx
+ │   └─ visualizapessoa/VisualizaPessoaV2.jsx
 
-📌 Objetivo da Atividade
+🛠️ Tecnologias Utilizadas
+Tecnologia	Função
+ReactJS + Vite	Interface e build rápido
+Ant Design	DatePicker e UI Components
+Dayjs	Manipulação de datas
+LocalStorage	Persistência dos dados
+JavaScript ES6	Lógica da aplicação
+🚀 Como Rodar o Projeto
 
-Implementar de forma complementar os objetos, formulários e componentes necessários para:
+Clone o repositório:
 
-Inserir Data de Nascimento no cadastro de Pessoa Física.
+git clone https://github.com/alanis32/react-crud-pf-pj
 
-Salvar e carregar corretamente esse campo no LocalStorage.
 
-Exibir a data formatada tanto na listagem quanto na página de visualização.
+Instale as dependências:
 
-✅ Funcionalidades Implementadas
-🧑‍💼 Pessoa Física (PF)
+npm install
 
-As seguintes adaptações foram realizadas para atender à atividade:
 
-🔧 1. Inclusão do campo Data de Nascimento no formulário
+Execute o projeto localmente:
 
-O arquivo PFForm.jsx foi atualizado para incluir um componente DatePicker.
+npm run dev
 
-O usuário agora pode selecionar a data diretamente no calendário.
 
-🧱 2. Ajustes na classe PF (PF.mjs)
+Acesse o navegador:
 
-Foi adicionada a nova propriedade:
+http://localhost:5173
 
-dataNascimento com getter e setter.
+📸 Demonstração (Opcional)
 
-Isso garante que o objeto PF tenha a estrutura correta para tratamento da data.
+Posso gerar para você:
+✔ GIF mostrando o fluxo cadastrar → listar → editar
+✔ Capturas de tela estilizadas
+✔ Mini vídeo de demonstração
 
-💾 3. Salvamento da data no cadastro
+📌 Observações
 
-No arquivo PessoaFormOOV2.jsx:
+Este projeto segue como complementação à atividade proposta, garantindo o tratamento completo da Data de Nascimento (PF) em todas as etapas: cadastro, edição, visualização e listagem.
 
-O valor selecionado no DatePicker é convertido para o formato "YYYY-MM-DD" usando dayjs antes de ser salvo.
+🙋‍♀️ Autor(a)
 
-Isso garante consistência no LocalStorage.
-
-✏️ 4. Carregamento da data ao editar
-
-Quando o usuário entra no modo edição, a data salva como string é convertida novamente para um objeto dayjs.
-
-Assim, o DatePicker exibe corretamente a data já cadastrada.
-
-📋 5. Exibição da data na listagem
-
-Os arquivos foram atualizados:
-
-src/componentes/listapessoas/ListaPessoasV2.jsx
-
-src/componentes/visualizapessoa/VisualizaPessoaV2.jsx
-
-Agora a Data de Nascimento aparece formatada, seguindo padrão "DD/MM/YYYY".
-
+Alanis
+Desenvolvedora em formação — React • Front-End • JavaScript
