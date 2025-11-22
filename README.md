@@ -1,64 +1,28 @@
-✨ Principais Melhorias Implementadas
-🧑‍⚖️ Pessoa Física (PF): Data de Nascimento
+Segue o link do meu repositório com a solução da atividade:
 
-✔ Adicionado DatePicker no formulário (PFForm.jsx)
-✔ Criada propriedade dataNascimento na classe PF (PF.mjs)
-✔ Salvamento da data no formato YYYY-MM-DD (PessoaFormOOV2.jsx)
-✔ Conversão para dayjs ao editar
-✔ Exibição formatada na Listagem e Visualização
-— com alterações em:
-ListaPessoasV2.jsx e VisualizaPessoaV2.jsx
+👉 https://github.com/fabiulabrandao-154/Atividade_Avaliativa_2_Unidade_5
 
-🗂️ Estrutura dos Arquivos Alterados
-src/
- ├─ classes/
- │   └─ PF.mjs
- ├─ componentes/
- │   ├─ pf/PFForm.jsx
- │   ├─ pessoas/PessoaFormOOV2.jsx
- │   ├─ listapessoas/ListaPessoasV2.jsx
- │   └─ visualizapessoa/VisualizaPessoaV2.jsx
+Para atender ao requisito da atividade, fiz as seguintes adaptações:
 
-🛠️ Tecnologias Utilizadas
-Tecnologia	Função
-ReactJS + Vite	Interface e build rápido
-Ant Design	DatePicker e UI Components
-Dayjs	Manipulação de datas
-LocalStorage	Persistência dos dados
-JavaScript ES6	Lógica da aplicação
-🚀 Como Rodar o Projeto
+### 🧍‍♀️ Pessoa Física (PF)
+- Adicionei o campo de **Data de Nascimento** no formulário da Pessoa Física (`PessoaFormOOV2.jsx`).
+- Implementei a propriedade **dataNascimento** na classe PF (`PF.js`), incluindo getter e setter.
+- Ajustei o salvamento no cadastro para gravar corretamente a data no objeto PF.
+- Ajustei o carregamento para edição, garantindo que a data armazenada seja exibida corretamente no formulário.
+- Adicionei a coluna **Data Nascimento** na listagem (`ListaPessoasV2.jsx`), exibindo a data formatada conforme o filtro PF.
 
-Clone o repositório:
+### 🏢 Pessoa Jurídica (PJ)
+- Adicionei o campo de **Data de Registro** no formulário.
+- Implementei a propriedade **dataRegistro** na classe PJ (`PJ.js`), com getter e setter.
+- Ajustei o DAO (`PJDAOLocalV2.mjs`) para salvar e recuperar a data no `localStorage`.
+- Ajustei o carregamento para edição da PJ, mantendo a data consistente.
+- Adicionei a coluna **Data Registro** na listagem (`ListaPessoasV2.jsx`) quando o filtro selecionado é PJ.
 
-git clone https://github.com/alanis32/react-crud-pf-pj
+### 🗂️ DAOs e Listagem
+- Ajustei `PFDAOLocalV2.mjs` e `PJDAOLocalV2.mjs` para garantir gravação e leitura correta das datas.
+- A listagem agora exibe automaticamente:
+  - **Data de Nascimento** quando o tipo selecionado é **PF**.
+  - **Data de Registro** quando o tipo selecionado é **PJ**.
+- Toda a lógica de exibição foi mantida dentro do arquivo `ListaPessoasV2.jsx`, conforme padrão do projeto.
 
-
-Instale as dependências:
-
-npm install
-
-
-Execute o projeto localmente:
-
-npm run dev
-
-
-Acesse o navegador:
-
-http://localhost:5173
-
-📸 Demonstração (Opcional)
-
-Posso gerar para você:
-✔ GIF mostrando o fluxo cadastrar → listar → editar
-✔ Capturas de tela estilizadas
-✔ Mini vídeo de demonstração
-
-📌 Observações
-
-Este projeto segue como complementação à atividade proposta, garantindo o tratamento completo da Data de Nascimento (PF) em todas as etapas: cadastro, edição, visualização e listagem.
-
-🙋‍♀️ Autor(a)
-
-Alanis
-Desenvolvedora em formação — React • Front-End • JavaScript
+As modificações garantem que as datas sejam cadastradas, editadas, armazenadas e exibidas corretamente no CRUD, atendendo às exigências da atividade.
